@@ -1,0 +1,25 @@
+@import '../../scss/base.scss';
+
+.info-languages {
+  @include absoluteFromLeft(1.8vmin, 3vmin);
+  @include media('min1200') {
+    @include absoluteFromLeft(1.8%, 3%);
+  }
+  z-index: -1;
+  opacity: 0;
+  transition: all .5s ease;
+  &--open {
+    opacity: 1;
+    z-index: 1;
+  }
+  &__icon {
+    cursor: pointer;
+    @include flexCenter;
+    height: 8vmin;
+    @include media('min1200') {
+      height: 1.8rem;
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+@import '../../scss/base.scss';
+
+.header {
+  background-color: $color-granite-dark;
+  @include flexCenter;
+  height: 12vmin;
+  @include media('min1200') {
+    height: 12%;
+  }
+  &__image {
+    @include flexCenter;
+    margin-right: 3vmin;
+    height: 8vmin;
+    @include media('min1200') {
+      margin-right: 3%;
+      height: 70%;
+    }
+  }
+
+  &__text {
+    font-size: 8vmin;
+    color: $color-pink;
+    @include media('min1200') {
+      font-size: 1.6rem;
+    }
+  }
+}

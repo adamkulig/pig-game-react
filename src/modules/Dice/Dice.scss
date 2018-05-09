@@ -1,0 +1,15 @@
+@import '../../scss/base.scss';
+
+.game-panel__dices__img {
+  margin: 3%;
+  width: 44%;
+  @include media('portrait') {
+    height: 44%;
+    width: auto;
+  }
+  @include media('min1200') {
+    // height: 94%;
+    // width: 25%;
+  }
+}
+

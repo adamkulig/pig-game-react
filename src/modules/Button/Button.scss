@@ -1,0 +1,36 @@
+@import '../../scss/base.scss';
+
+.btn {
+  width: 70%;
+  font-size: 1.2rem; 
+  margin-bottom: 5%;
+  padding: 0.3rem 0;
+  border-radius: 0.5rem;
+  @include boxShadow;
+  color: $color-blue-light;
+  background-color: $color-granite;
+  cursor: pointer;
+  transition: all 0.2s;
+  @include media('portrait') {
+    width: 90%;
+    padding: 0.5rem 0;
+  }
+  &--hide {
+    visibility: hidden;
+  }
+  &:hover {
+    background-color: $color-granite-dark;
+  }
+  &:hover &__text {
+    margin-left: 0.6rem;
+  }
+  &__icon {
+    font-size: 1.2rem;
+    position: relative;
+    top: -1px;
+  }
+  &__text {
+    margin-left:0.5rem;
+  }
+}
+

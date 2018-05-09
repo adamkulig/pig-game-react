@@ -1,0 +1,105 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin backgroundNormal {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("./images/sky.jpg");
+}
+@mixin backgroundLarge {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("./images/sky-big.jpg");
+}
+
+@mixin boxShadow {
+  box-shadow: 1px 1px 2px #333;
+}
+@mixin absoluteFromLeft($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+@mixin absoluteFromRight($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+//mixin of media queries
+@mixin media($breakpoint) {
+  @if $breakpoint == 'portrait' {
+    @media only screen and (orientation:portrait) {@content};
+  }
+  @if $breakpoint == 'min600landscape' {
+    @media only screen and (min-width:600px) and (orientation:landscape) {@content};
+  }
+  @if $breakpoint == 'min600portrait' {
+    @media only screen and (min-width:600px) and (orientation:portrait) {@content};
+  }
+  @if $breakpoint == 'min900' {
+    @media only screen and (min-width:900px) {@content};
+  }
+  @if $breakpoint == 'min900landscape' {
+    @media only screen and (min-width:900px) and (orientation:landscape) {@content};
+  }
+  @if $breakpoint == 'min1200' {
+    @media only screen and (min-width:1200px) {@content};
+  }
+}
+
+// @mixin textShadow {
+//   text-shadow: 1px 2px 3px #000;
+// }
+
+
+
+// @mixin absolute($top, $left) {
+//   position: absolute;
+//   top: $top;
+//   left: $left;
+// }
+
+// @mixin h1Section($fontColor) {
+//   font-size: 2.2rem;
+//   letter-spacing: 2px;
+//   text-align: center;
+//   margin: 2rem 0;
+//   color: $fontColor;
+//   font-weight: bold;
+// }
+
+// @mixin h2Section($fontColor) {
+//   font-size: 1.8rem;
+//   word-spacing: 1px;
+//   text-align: center;
+//   margin: 1rem 0;
+//   color: $fontColor;
+//   font-weight: bold;
+// }
+
+// @mixin h3Section($fontColor) {
+//   font-size: 1.5rem;
+//   word-spacing: 1px;
+//   text-align: center;
+//   margin: 0.5rem 0;
+//   color: $fontColor;
+//   font-weight: bold;
+// }
+
+// @mixin h4Section($fontColor) {
+//   font-size: 1.2rem;
+//   text-align: center;
+//   margin: 0.3rem 0;
+//   color: $fontColor;
+//   font-weight: normal;
+// }
+
+// @mixin pSection($fontColor) {
+//   font-size: 1.8rem;
+//   word-spacing: 1px;
+//   text-align: center;
+//   margin: 1rem 0;
+//   color: $fontColor;
+//   line-height: 2.2rem;
+//   font-weight: normal;
+// }

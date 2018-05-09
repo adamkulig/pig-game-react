@@ -1,0 +1,13 @@
+@import '../../scss/base.scss';
+
+.info-icon {
+  cursor: pointer;
+  z-index: 10;
+  font-size: 6vmin;
+  color: $color-pink;
+  @include absoluteFromRight(1.8vmin, 3vmin);
+  @include media('min1200') {
+    font-size: 1.2rem;
+    @include absoluteFromRight(1.8%, 3%);
+  }
+}

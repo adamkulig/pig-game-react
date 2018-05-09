@@ -1,0 +1,1 @@
+export const randomizer = (maxValue) => Math.floor(Math.random()*maxValue + 1 )

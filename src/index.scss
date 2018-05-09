@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=latin-ext');
+@import './scss/base.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  @include media('portrait') {
+    font-size: 14px;
+  }
+  @include media('min600landscape') {
+    font-size: 18px;
+  }
+  @include media('min600portrait') {
+    font-size: 26px;
+  }
+  @include media('min900') {
+    font-size: 28px;
+  }
+}
+
+body {
+  @include backgroundNormal;
+  @include media('min900') {
+    @include backgroundLarge;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.hide {
+  visibility: hidden;
+}
+
+// h2 {
+//   margin: 0.5rem;
+// }
+
+// h4 {
+//   margin: 0.3rem;
+// }
+
+// @media screen and (min-width: 450px) {
+//   html {
+//     font-size: 17px;
+//   }
+// }
+
+// @media screen and (min-width: 600px) {
+//   html {
+//     font-size: 20px;
+//   }
+// }
+
+// @media screen and (min-width: 750px) {
+//   html {
+//     font-size: 23px;
+//   }
+// }
+
+// @media screen and (min-width: 900px) {
+//   html {
+//     font-size: 25px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   body {
+//     @include backgroundLarge;
+//   }
+// }
+
+// @media screen and (min-height: 900px) and (orientation: portrait) {
+//   body {
+//     @include backgroundLarge;
+//   }
+// }

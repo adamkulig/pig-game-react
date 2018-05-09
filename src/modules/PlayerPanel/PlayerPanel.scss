@@ -1,0 +1,73 @@
+@import '../../scss/base.scss';
+
+.player-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__winner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    &--active {
+      color: $color-orange;
+    }
+    &--hide {
+      visibility: hidden;
+    }
+  }
+  &__totalscore, &__currentscore {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    border-radius: 0.5rem;
+    text-align: center;
+    @include media('portrait') {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 3% 8%;
+    }
+  }
+
+  &__totalscore {
+    background-color: $color-granite;
+    border: 2px solid $color-granite-dark;
+    &__player, &__score {
+      margin: 0.3rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      @include media('portrait') {
+        margin: 0.6rem 0;
+      }
+    }
+    &__player--active {
+      color: $color-orange;
+    }
+    &__score--active {
+      color: $color-blue;
+    }
+  }
+  &__currentscore {
+    background-color: $color-granite-light;
+    border: 2px solid $color-granite;
+    margin-bottom: 40%;
+    @include media('portrait') {
+      margin-bottom: 0;
+    }
+    &__player, &__score {
+      margin: 0.2rem 0;
+      font-size: 1rem;
+      font-weight: bold;
+      @include media('portrait') {
+        margin: 0.6rem 0;
+      }
+    }
+    &__player--active {
+      color: $color-yellow;
+    }
+    &__score--active {
+      color: $color-blue;
+    }
+  }
+}
+
