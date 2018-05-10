@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  height: 100vh;
   @include backgroundNormal;
   @include media('min900') {
     @include backgroundLarge;
