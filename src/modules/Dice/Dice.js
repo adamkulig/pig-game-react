@@ -13,22 +13,24 @@ export class Dice extends React.Component {
  
   ShowImages = () => {
    const value = this.props.value;
-   const classname = 'game-panel__dices__img'
+   const diceClassHidden = 'game-panel__dices__img game-panel__dices__img--hidden'
+   const diceClass = 'game-panel__dices__img'
+   const diceClassWithPig = 'game-panel__dices__img game-panel__dices__img--pig'
    switch(value) {
      case 1:
-      return <img className={classname} src={dice1} alt='dice'/>
+      return <img className={diceClassWithPig} src={dice1} alt='dice'/>
      case 2:
-      return <img className={classname} src={dice2} alt='dice'/>
+      return <img className={diceClass} src={dice2} alt='dice'/>
      case 3:
-      return <img className={classname} src={dice3} alt='dice'/>
+      return <img className={diceClass} src={dice3} alt='dice'/>
      case 4:
-      return <img className={classname} src={dice4} alt='dice'/>
+      return <img className={diceClass} src={dice4} alt='dice'/>
      case 5:
-      return <img className={classname} src={dice5} alt='dice'/>
+      return <img className={diceClass} src={dice5} alt='dice'/>
      case 6:
-      return <img className={classname} src={dice6} alt='dice'/>
+      return <img className={diceClass} src={dice6} alt='dice'/>
      default:
-      return <img className={classname} src={dice0} alt='dice'/>
+      return <img className={diceClassHidden} src={dice0} alt='dice'/>
     }
   }
 

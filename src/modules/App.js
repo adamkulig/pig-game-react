@@ -18,9 +18,10 @@ class App extends Component {
         {playerId: 2, totalScore: 0, currentScore: 0}],
       dicesValues: [0,0],
       activePlayer: 1,
-      gameOver: false,
+      gameOver: true,
       infoIsOpen: false,
-      polishLanguage: true
+      polishLanguage: true,
+      firstGame: true
     }
   }
 
@@ -110,12 +111,13 @@ class App extends Component {
           {playerId: 2, totalScore: 0, currentScore: 0, winner: false}],
         dicesValues: [0,0],
         activePlayer: randomizer(this.state.scores.length),
-        gameOver: false
+        gameOver: false,
+        firstGame: false
     })
   }
 
   render() {
-    const { gameOver, dicesValues } = this.state;
+    const { gameOver, dicesValues, firstGame } = this.state;
     return (
       <div className='App'>
         <Header />
@@ -125,6 +127,7 @@ class App extends Component {
               key={player.playerId} 
               scores={player}
               gameOver={gameOver}
+              firstGame={firstGame}
               activity={this.isThisPlayerActive(player)}/>
           )}
           <GamePanel 

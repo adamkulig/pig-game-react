@@ -3,6 +3,14 @@
 .game-panel__dices__img {
   margin: 3%;
   width: 44%;
+  background-color: $color-blue-light;
+  border-radius: 0.85rem;
+  &--hidden {
+    visibility: hidden;
+  }
+  &--pig {
+    background-color: $color-pink;
+  }
   @include media('portrait') {
     height: 44%;
     width: auto;

@@ -3,11 +3,11 @@
 .info-icon {
   cursor: pointer;
   z-index: 10;
-  font-size: 6vmin;
+  font-size: 8vmin;
   color: $color-pink;
-  @include absoluteFromRight(1.8vmin, 3vmin);
+  @include absoluteFromRight(0.5vmin, 3vmin);
   @include media('min1200') {
-    font-size: 1.2rem;
-    @include absoluteFromRight(1.8%, 3%);
+    font-size: 1.6rem;
+    @include absoluteFromRight(0.5%, 3%);
   }
 }
