@@ -10,7 +10,7 @@
   color: $color-blue-light;
   background-color: $color-granite;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s;
   @include media('portrait') {
     width: 90%;
     padding: 0.5rem 0;

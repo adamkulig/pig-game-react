@@ -1,7 +1,13 @@
-Simple dice game 'Pig Game'
+My second project with React.js.
 
--create-react-app
--React.js
--SCSS
--Javascript (ES6)
--RWD
+Simple dice game "Pig game"
+
+I used:
+- create-react-app 
+- React.js 
+- SCSS (RWD)
+- Javascript (ES6) 
+
+Easy random game for two players. The player who earns at least 100 points first wins. 
+
+Date: 05.2018
