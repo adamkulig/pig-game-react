@@ -2,6 +2,9 @@ My second project with React.js.
 
 Simple dice game "Pig game"
 
+GitHub Pages:
+https://adamkulig.github.io/pig-game-react/
+
 I used:
 - create-react-app 
 - React.js 
